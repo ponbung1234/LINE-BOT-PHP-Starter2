@@ -9,9 +9,7 @@ $events = json_decode($content, true);
 
 if (isset($_POST['submit'])) {
 	$name = $_POST['name'];
-	// Loop through each event
-	foreach ($events['events'] as $event) {
-		
+	
 			// Get text sent
 			$text = 'Hello fuck';
 			// Get replyToken
@@ -43,7 +41,7 @@ if (isset($_POST['submit'])) {
 
 			echo $result . "\r\n";
 		
-	}
+	
 }
 echo "OK";
 /*if (!is_null($events['events'])) {
